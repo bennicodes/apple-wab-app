@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons --------------- -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/favicons/favicon.svg"
+    />
+    <link rel="shortcut icon" href="../assets/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Apple Shop" />
+    <link rel="manifest" href="../assets/favicons/site.webmanifest" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS Files --------------- -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/mac.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- NAVBAR LOGO ------------- -->
+        <div class="navbar__logo-container">
+          <a href="../index.html">
+            <img
+              src="../assets/img/white-apple-logo.png"
+              alt="Main logo of the website"
+              class="navbar__logo"
+            />
+          </a>
+        </div>
+
+        <!-- NAVBAR LINKS ------------ -->
+        <div class="navbar__link-container">
+          <ul class="navbar__links">
+            <li class="navbar__link">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="navbar__link">
+              <a href="../pages/products.html">Store</a>
+            </li>
+            <li class="navbar__link navbar__link--active">
+              <a href="../pages/mac.html">Mac</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Shopping Cart -->
+        <button class="cart__button">
+          <i class="fa-solid fa-cart-shopping fa-lg cart__icon"></i>
+          <span class="cart__counter">0</span>
+        </button>
+
+        <!-- Inside shopping cart ------ -->
+        <div class="cart__container">
+          <div class="cart__top-container">
+            <h2 class="cart__heading">Cart</h2>
+            <button class="clear__cart-button">
+              <i class="fa-solid fa-trash-can fa-xl clear__cart-icon"></i>
+            </button>
+          </div>
+
+          <!-- Cart Item --------- -->
+          <ul class="cart__item-container"></ul>
+          <div class="cart__bottom-container">
+            <div class="total__price-container">
+              <!-- Cart Total ------------- -->
+              <p class="total__price">Total:</p>
+              <p class="sum__price">$1999</p>
+            </div>
+            <!-- Cart Buttons ----------- -->
+            <div class="cart__button-container">
+              <button class="cart__close-button">Close</button>
+              <button class="cart__checkout-button">Checkout</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOGGLE BUTTON ----------- -->
+        <div class="navbar__toggle-button-container">
+          <button class="navbar__toggle-button">
+            <i class="fa-solid fa-bars fa-2x navbar__toggle-logo"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="heading__container">
+        <h2 class="header-heading">Mac</h2>
+        <p class="header__paragraph">If you can dream it, Mac can do it</p>
+      </div>
+    </header>
+
+    <main></main>
+    <script type="module" src="../js/products.js"></script>
+    <script type="module" src="../js/cart.js"></script>
+    <script type="module" src="../js/navbar.js"></script>
+  </body>
+</html>
